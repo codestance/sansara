@@ -975,13 +975,13 @@ h4 {
 }
 
 /* line 744, ../sass/index.scss */
-.adv {
+.atg {
   display: block;
   position: relative;
 }
 
 /* line 749, ../sass/index.scss */
-.adv-decor {
+.atg-decor {
   background: url("../images/cloud.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -995,21 +995,21 @@ h4 {
 }
 @media (min-width: 700px) {
   /* line 749, ../sass/index.scss */
-  .adv-decor {
+  .atg-decor {
     top: 25%;
     right: 20%;
   }
 }
 @media (min-width: 900px) {
   /* line 749, ../sass/index.scss */
-  .adv-decor {
+  .atg-decor {
     top: 28%;
     right: 15%;
   }
 }
 
 /* line 769, ../sass/index.scss */
-.adv-decor-1 {
+.atg-decor-1 {
   background: url("../images/silverBalls/double.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1023,13 +1023,13 @@ h4 {
 }
 @media (min-width: 1100px) {
   /* line 769, ../sass/index.scss */
-  .adv-decor-1 {
+  .atg-decor-1 {
     bottom: 5%;
   }
 }
 
 /* line 785, ../sass/index.scss */
-.adv-decor-2 {
+.atg-decor-2 {
   background: url("../images/paramecium/124x134.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1043,13 +1043,13 @@ h4 {
 }
 @media (min-width: 900px) {
   /* line 785, ../sass/index.scss */
-  .adv-decor-2 {
+  .atg-decor-2 {
     top: 35%;
   }
 }
 
 /* line 801, ../sass/index.scss */
-.adv-decor-3 {
+.atg-decor-3 {
   background: url("../images/paramecium/256x238.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1063,14 +1063,14 @@ h4 {
 }
 @media (min-width: 900px) {
   /* line 801, ../sass/index.scss */
-  .adv-decor-3 {
+  .atg-decor-3 {
     top: 45%;
     left: 0;
   }
 }
 
 /* line 822, ../sass/index.scss */
-.adv-decor-4 {
+.atg-decor-4 {
   background: url("../images/pebbles/84x72.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1083,24 +1083,24 @@ h4 {
 }
 @media (min-width: 700px) {
   /* line 822, ../sass/index.scss */
-  .adv-decor-4 {
+  .atg-decor-4 {
     left: 10%;
   }
 }
 
 /* line 841, ../sass/index.scss */
-.adv-item {
+.atg-item {
   padding: 20px 0;
 }
 @media (min-width: 700px) {
   /* line 841, ../sass/index.scss */
-  .adv-item {
+  .atg-item {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
   }
   /* line 847, ../sass/index.scss */
-  .adv-item:nth-of-type(even) {
+  .atg-item:nth-of-type(even) {
     flex-direction: row-reverse;
   }
 }
