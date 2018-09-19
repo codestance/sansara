@@ -1,0 +1,335 @@
+@mixin decor($url,$bgposition){
+	background: $url;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: $bgposition;
+	position: absolute;
+}
+
+.top-decor{
+	@include decor(url('../images/silverBalls/top.png'), top);
+	top: 0;
+	left: 33%;
+	width: 11%;
+	max-width: 152px;
+	height: 76px;
+}
+.top-decor-1{
+	@include decor(url('../images/whiteBalls/30.png'), center);
+	top: 15px; //max 30px
+	left: 30%;
+	width: 5%;
+	max-width: 30px;
+	height: 30px;
+}
+.top-decor-2{
+	@include decor(url('../images/whitePebbles/83x67.png'), center);
+	top: 110px;
+	left: 27%; //max 368px
+	width: 10%;
+	max-width: 83px;
+	height: 67px;
+}
+.top-decor-3{
+	@extend .top-decor-1;
+	top: 140px;
+	left: 33%;
+}
+.top-decor-4{
+	@include decor(url('../images/silverBalls/35.png'), center);
+	top: 160px;//max200px
+	left: 36%;
+	width: 5%;
+	max-width: 33px;
+	height: 33px;
+}
+
+
+.box-decor{
+	@include decor(url('../images/whitePebbles/264x322.png'),top left );
+	top:65%;
+	left: 0;
+	width: 20%;
+	max-width: 264px;
+	height: 322px;
+}
+.box-decor-1{
+	@include decor(url('../images/silverBalls/78x74.png'), center);
+	bottom: 20%;
+	left: 65%;
+	width: 10%;
+	max-width:78px;
+	height:74px;
+}
+.box-decor-2{
+	@include decor( url('../images/silverBalls/95x72.png'), center);
+	top: 10px;
+	left: 30%;
+	width: 7%;
+	max-width:95px;
+	height:72px;
+	z-index: -1;
+	@media(min-width: 900px){
+		z-index: 1;
+	}
+}
+.box-decor-3{
+	@include decor( url('../images/whitePebbles/89x73.png'), center);
+	top: 30%;
+	left: 55%;
+	width: 15%;
+	max-width:89px;
+	height:73px;
+}
+.box-decor-4{
+	@include decor( url('../images/whiteBalls/30.png'), center);
+	top: 20%;
+	left: 70%;
+	width: 30px;
+	height:30px;
+	z-index:-1;
+	@media(min-width: 900px){
+		z-index: 1;
+	}
+}
+
+.box-decor-5{
+	@include decor( url('../images/whitePebbles/164x133.png'), top);
+	top: -10%;
+	left: 20%;
+	width: 15%;
+	max-width: 164px;
+	height:133px;
+	z-index:-2;
+	@media(min-width: 900px){
+		z-index: 0;
+	}
+}
+.box-decor-6{
+	@include decor( url('../images/silverBalls/30blurr.png'), center);
+	top: 0;
+	left: 50%;
+	width: 30px;
+	height:30px;
+	z-index:1;
+	@media(min-width: 900px){
+		z-index: 3;
+	}
+}
+.box-decor-7{
+	@include decor( url('../images/silverBalls/20.png'), center);
+	top: 70%;
+	left: 40%;
+	width: 20px;
+	height:20px;
+}
+
+
+.about-decor{
+	@include decor(url('../images/silverBalls/61.png'), center);
+	top: 6%;
+	left: 5%;
+	width: 61px;
+	height: 61px;
+	@media(min-width: 700px){
+		top: 25%;
+		left: 15%;
+	}
+}
+.about-decor-1{
+	@include decor(url('../images/silverBalls/20.png'), center);
+	top: 0;
+	left: 25%;
+	width: 20px;
+	height: 20px;
+}
+.about-decor-2{
+	@include decor(url('../images/silverBalls/20.png'), center);
+	top: 35%;
+	left: 40%;
+	width: 20px;
+	height: 20px;
+}
+
+.mission-decor{
+	@include decor(url('../images/whitePebbles/264x322.png'), left);
+	top: 10px;
+	left: 0;
+	width: 20%;
+	max-width: 264px;
+	height: 322px;
+	display: none;
+	@media(min-width: 1100px){
+		display: block;
+	}
+}
+.mission-decor-1{
+	@include decor(url('../images/pebbles/50x60.png'), center);
+	bottom: 20%;
+	right: 20%;
+	width: 50px;
+	height: 60px;
+	@media(min-width: 700px){
+		right: 30%;
+	}
+}
+
+
+.atg-decor{
+	@include decor(url('../images/cloud.png'), center);
+	top: 22%;
+	right: 30%;
+	width: 50%;
+	max-width:266px;
+	height:137px;
+	@media(min-width: 700px){
+		top: 25%;
+		right: 20%;
+	}
+	@media(min-width: 900px){
+		top: 28%;
+		right: 15%;
+	}
+}
+.atg-decor-1{
+	@include decor(url('../images/silverBalls/double.png'), center);
+	bottom: 0;
+	left:20%;
+	width: 10%;
+	max-width:118px;
+	height:96px;
+	@media(min-width: 1100px){
+		bottom: 5%
+	}
+}
+
+.atg-decor-2{
+	@include decor(url('../images/paramecium/124x134.png'), right);
+	top: 30%;
+	right:0;
+	width: 40%;
+	max-width:124px;
+	height:134px;
+	@media(min-width: 900px){
+		top: 35%;
+	}
+}
+
+.atg-decor-3{
+	@include decor(url('../images/paramecium/256x238.png'), left);
+	top: 40%;
+	left: 5%;
+	width: 40%;
+	max-width:256px;
+	height:238px;
+	@media(min-width: 900px){
+		top: 45%;
+		left: 0;
+	}
+}
+
+.atg-decor-4{
+	@include decor(url('../images/pebbles/84x72.png'), center);
+	top: 12%;
+	left: 5%;
+	width: 84px;
+	height:72px;
+	@media(min-width: 700px){
+		left: 10%;
+	}
+}
+
+.offer-decor{
+	@include decor(url('../images/silverBalls/20.png'), center);
+	bottom: 30%;
+	right: 30px;
+	width: 20px;
+	height:20px;
+}
+.offer-decor-1{
+	@include decor(url('../images/silverBalls/35.png'), center);
+	top:40%;
+	left: 50px;
+	width: 35px;
+	height:35px;
+	z-index: 1;
+}
+.offer-decor-2{
+	@include decor(url('../images/pebbles/101x87.png'), center);
+	top:50%;
+	left: 10%;
+	width: 10%;
+	max-width:101px;
+	height:87px;
+	z-index: 1;
+	@media(min-width:700px){
+		left: 15%;
+	}
+}
+.offer-decor-3{
+	@include decor(url('../images/whiteBalls/50x49.png'), center);
+	top:20%;
+	right: 10%;
+	width: 50px;
+	height:47px;
+	// z-index: 1;
+	// @media(min-width:700px){
+	// 	left: 15%;
+	// }
+}
+
+.contact-decor{
+	@include decor(url('../images/paramecium/195x261.png'), top right);
+	top: 15%;
+	right: 0;
+	width: 20%;
+	max-width: 195px;
+	height:261px;
+	z-index:-1;
+	@media(min-width: 900px){
+		z-index: 0;
+	}
+}
+.contact-decor-1{
+	@include decor(url('../images/silverBalls/120blurr.png'), center);
+	top: 15%;
+	left: 50%;
+	width: 20%;
+	max-width: 120px;
+	height:120px;
+	z-index:-1;
+	@media(min-width: 900px){
+		z-index: 0;
+		left: 45%;
+	}
+	@media(min-width: 1200px){
+		z-index: 0;
+		left: 40%;
+	}
+}
+
+.bottom-box{
+	@include decor(url('../images/boxBottom.png'), bottom right);
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 570px;
+}
+
+.bottom-decor{
+	@include decor(url('../images/pebbles/101x87.png'), bottom right);
+	bottom:-20px;
+	right: 20%;
+	width: 101px;
+	height: 87px;
+	@media(min-width: 900px){
+		right: 250px;
+	}
+}
+.bottom-decor-1{
+	@include decor(url('../images/silverBalls/35.png'), bottom right);
+	bottom:206px;
+	left: 6%;
+	width: 33px;
+	height: 33px;
+}
