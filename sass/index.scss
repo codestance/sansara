@@ -148,7 +148,7 @@ header{
 .top-box-section{
 	width: 100%;
 	max-width: 1366px;
-	padding-top: 90px;
+	padding-top: 140px;
 	margin: 0 auto;
 	position: relative;
 	//max padding 154px
@@ -159,6 +159,8 @@ header{
 	text-align: center;
 	font-size: 16px;
 	padding-bottom: 30px; //max 58px
+	position: relative;
+	z-index: 1;
 	@media(min-width: 1200px){
 		padding-bottom: 58px;
 	}
@@ -183,6 +185,7 @@ header{
 	text-align: center;
 	line-height: 40px;
 	margin: 0 auto;
+	position: relative;
 	z-index: 2;
 	a{
 		text-transform: uppercase;
@@ -234,6 +237,7 @@ header{
 .ab{
 	width:100%;
 	position: relative;
+	padding-top:42px;
 }
 
 
@@ -266,9 +270,9 @@ header{
 	}
 }
 
-.about-rise{
-	@extend .about;
-}
+// .about-rise{
+// 	@extend .about;
+// }
 .about-rise-logo{
 	background: url('../images/riseBig.png');
 	background-repeat: no-repeat;
@@ -327,9 +331,9 @@ header{
 		}
 	}
 }
-.about-sansara{
-	@extend.about;
-}
+// .about-sansara{
+// 	@extend.about;
+// }
 .about-sansara-logo{
 	background: url('../images/cloudSansara.png');
 	background-repeat: no-repeat;
@@ -455,7 +459,7 @@ h2{
 }
 .mission-section{
 	width: 100%;
-	padding: 0 50px 80px 50px; //max-bottom 110px
+	padding: 0 50px 110px 50px;
 	position: relative;
 }
 .mission-box{
@@ -528,7 +532,7 @@ h2{
 .time-section{
 	text-align: center;
 	// position: relative;
-	padding: 0 50px 80px 50px;
+	padding: 0 50px 90px 50px;
 	h2{
 		// letter-spacing: 27px;
 		letter-spacing: 10px;
